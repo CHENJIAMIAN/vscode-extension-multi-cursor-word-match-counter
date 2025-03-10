@@ -1,0 +1,51 @@
+{
+  "name": "multi-cursor-word-match-counter",
+  "repository": "",
+  "displayName": "multi-cursor-word-match-counter",
+  "description": "multi-cursor-word-match-counter",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:multi-cursor-word-match-counter.countWordMatches",
+    "onCommand:multi-cursor-word-match-counter.appendCountWordMatches"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "multi-cursor-word-match-counter.countWordMatches",
+        "title": "Count Word Matches(统计单词匹配数量)"
+      },
+      {
+        "command": "multi-cursor-word-match-counter.appendCountWordMatches",
+        "title": "Append Count Word Matches(追加统计单词匹配数量)",
+        "titleZh": "追加统计单词匹配数量"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "packageManager": "pnpm@9.14.3+sha512.c0f53ee99477ed969b82b289ad011a5d16bf1623c957e7f29eabe8d0c00b574c29b8c7f54f6c67ee710c73f285c8154d07ce44b46fe2c0eeb476a90441bac371"
+}
