@@ -1,0 +1,6 @@
+{
+  "extension.displayName": "Multi-Cursor Word Match Counter",
+  "extension.description": "Count word matches at multiple cursors and show or append the results.",
+  "command.countWordMatches.title": "Count Word Matches",
+  "command.appendCountWordMatches.title": "Append Word Match Counts"
+}

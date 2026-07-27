@@ -1,0 +1,6 @@
+{
+  "extension.displayName": "多光标单词匹配统计器",
+  "extension.description": "统计多个光标处的单词匹配数，并显示或追加统计结果。",
+  "command.countWordMatches.title": "统计单词匹配数量",
+  "command.appendCountWordMatches.title": "追加单词匹配数量"
+}

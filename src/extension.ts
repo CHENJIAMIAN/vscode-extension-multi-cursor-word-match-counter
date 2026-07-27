@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposableCountWordMatches = vscode.commands.registerCommand('multi-cursor-word-match-counter.countWordMatches', () => {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) {
-			vscode.window.showInformationMessage('No active editor');
+			vscode.window.showInformationMessage(vscode.l10n.t('No active editor.'));
 			return;
 		}
 
@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
 				const count = matches ? matches.length : 0;
 				results.push(`${word} ${count}`);
 			} else {
-				results.push('No word at cursor');
+				results.push(vscode.l10n.t('No word at cursor.'));
 			}
 		});
 
@@ -45,7 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposableAppendCountWordMatches = vscode.commands.registerCommand('multi-cursor-word-match-counter.appendCountWordMatches', () => {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) {
-			vscode.window.showInformationMessage('No active editor');
+			vscode.window.showInformationMessage(vscode.l10n.t('No active editor.'));
 			return;
 		}
 

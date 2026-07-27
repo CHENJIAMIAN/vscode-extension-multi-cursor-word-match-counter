@@ -1,13 +1,14 @@
 {
   "name": "multi-cursor-word-match-counter",
   "repository": "https://github.com/CHENJIAMIAN/vscode-extension-multi-cursor-word-match-counter",
-  "displayName": "multi-cursor-word-match-counter",
-  "description": "multi-cursor-word-match-counter",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
   "publisher": "CHENJIAMIAN",
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.98.0"
   },
+  "l10n": "./l10n",
   "categories": [
     "Other"
   ],
@@ -20,17 +21,16 @@
     "commands": [
       {
         "command": "multi-cursor-word-match-counter.countWordMatches",
-        "title": "Count Word Matches(统计单词匹配数量)"
+        "title": "%command.countWordMatches.title%"
       },
       {
         "command": "multi-cursor-word-match-counter.appendCountWordMatches",
-        "title": "Append Count Word Matches(追加统计单词匹配数量)",
-        "titleZh": "追加统计单词匹配数量"
+        "title": "%command.appendCountWordMatches.title%"
       }
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
