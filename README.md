@@ -1,3 +1,10 @@
+<!-- codex-github-rules:bilingual-summary -->
+> **中文简介**：统计多光标单词匹配数的 VS Code 扩展
+
+> **English summary**: A VS Code extension for counting multi-cursor word matches
+
+---
+
 ### VS Code 插件：多光标单词匹配统计器
 
 #### 插件简介
