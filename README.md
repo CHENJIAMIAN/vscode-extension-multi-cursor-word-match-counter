@@ -1,3 +1,5 @@
+[English](./README.en.md)
+
 <!-- codex-github-rules:bilingual-summary -->
 > **中文简介**：统计多光标单词匹配数的 VS Code 扩展
 
